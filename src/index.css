@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+	--color-background: #081028;
+	--color-border: #0b1739;
+	--shadow-3xl: 18px 0 25px 8px rgba(0, 0, 0, 0.3);
+}
