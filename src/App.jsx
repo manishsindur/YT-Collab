@@ -1,8 +1,17 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Welcome from "./pages/Welcome";
+import YouTubersDashboard from "./pages/YouTubersDashboard";
+import EditorsDashboard from "./pages/EditorsDashboard";
+
 function App() {
 	return (
-		<div>
-			<h1 className="bg-red-500">Welcome to my page</h1>
-		</div>
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Welcome />} />
+				<Route path="/youtubers-dashboard" element={<YouTubersDashboard />} />
+				<Route path="/editors-dashboard" element={<EditorsDashboard />} />
+			</Routes>
+		</BrowserRouter>
 	);
 }
 
