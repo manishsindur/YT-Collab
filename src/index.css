@@ -1,7 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-	--color-background: #081028;
-	--color-border: #0b1739;
+	--color-Primary: #cb3cff;
+	--color-Neutral-800: #081028;
+	--color-Neutral-600: #0b1739;
 	--shadow-3xl: 18px 0 25px 8px rgba(0, 0, 0, 0.3);
+}
+
+@layer components {
+	.nav-items {
+		@apply text-white text-sm mb-2 py-2 pl-2 rounded-xs border-Primary border-l-3 hover:bg-Neutral-600 cursor-pointer;
+	}
 }
